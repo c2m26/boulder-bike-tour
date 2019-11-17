@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import Contest_banner from './Constest_banner'
-import Hero from './Hero/Hero'
-
+import ContestBanner from './ContestBanner'
+import Hero from '../Home/Hero/Hero'
+import About from './About'
 
 class Home extends Component {
     render () {
         return (
             <div>
-                <Contest_banner/>
-                <Hero/>
+                <ContestBanner/>
+                <Hero />
+                <About />
+                
             </div>
         )
     }

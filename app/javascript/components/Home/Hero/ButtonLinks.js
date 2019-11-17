@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-const Button_links = () => {
+const ButtonLinks = () => {
     return (
         <div className="d-flex flex-wrap justify-content-around">
             <a className="btn btn-primary" href="#">Pictures</a>
@@ -10,4 +10,4 @@ const Button_links = () => {
     )
 }
 
-export default Button_links
+export default ButtonLinks

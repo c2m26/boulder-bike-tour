@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const Banner = styled.div`
@@ -6,7 +6,7 @@ const Banner = styled.div`
     
 `
 
-const Contest_banner = () => {
+const ContestBanner = () => {
     return (
         <Banner className="jumbotron jumbotron-fluid">
             <div className="container">
@@ -20,4 +20,4 @@ const Contest_banner = () => {
     
 }
 
-export default Contest_banner
+export default ContestBanner

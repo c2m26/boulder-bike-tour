@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Button_links from './Button_links'
+import ButtonLinks from './ButtonLinks'
 
 
 class Hero extends Component {
@@ -9,7 +9,7 @@ class Hero extends Component {
                 <h1>The Boulder Bike Tour is comming!</h1>
                 <div>Countdown</div>
                 <h2>See you on 1 April 2020</h2>
-                <div><Button_links/></div>
+                <div><ButtonLinks/></div>
             </div>
         )
     }
