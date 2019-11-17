@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import ContestBanner from './ContestBanner'
 import Hero from '../Home/Hero/Hero'
-import About from './About'
+import ButtonLinks from './Hero/ButtonLinks'
+import About from '../Home/About/About'
 
 class Home extends Component {
     render () {
@@ -9,6 +10,7 @@ class Home extends Component {
             <div>
                 <ContestBanner/>
                 <Hero />
+                <ButtonLinks />
                 <About />
                 
             </div>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Banner = styled.div`
     background-color: yellow;
-    
+    margin: 2rem 0;
 `
 
 const ContestBanner = () => {

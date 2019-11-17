@@ -5,7 +5,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'stylesheets/site.scss'
 import Home from '../components/Home/Home'
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

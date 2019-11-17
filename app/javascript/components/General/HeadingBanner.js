@@ -13,7 +13,7 @@ function HeadingBanner (props) {
     
     return (
         <div style={styles} className="jumbotron jumbotron-fluid">
-            <h1 className="d-flex justifiy-content-center align-items-center"> {props.heading} </h1>
+            <h1 className="d-flex justify-content-center align-items-center text-white"> {props.heading} </h1>
             
         </div>
     )
