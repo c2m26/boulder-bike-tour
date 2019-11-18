@@ -12,7 +12,6 @@ class Home extends Component {
                 <Hero />
                 <ButtonLinks />
                 <About />
-                
             </div>
         )
     }

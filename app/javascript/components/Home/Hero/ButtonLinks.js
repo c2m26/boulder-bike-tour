@@ -10,13 +10,13 @@ const ButtonLinks = () => {
     return (
     
         <div style={styleParent} className="container row">
-            <div className="col-xl-4 col-xl-4 col-xl-4 col-sm-12 col-12 d-flex justify-content-center">
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center">
                 <a className="btn btn-primary" href="#">Pictures</a>
             </div>
-            <div className="col-xl-4 col-xl-4 col-xl-4 col-sm-12 col-12 d-flex justify-content-center">
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center">
                 <a className="btn btn-primary" href="#">Tracker</a>
             </div>
-            <div className="col-xl-4 col-xl-4 col-xl-4 col-sm-12 col-12 d-flex justify-content-center">
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center">
                 <a className="btn btn-primary" href="#">Riders</a>
             </div>
         </div>

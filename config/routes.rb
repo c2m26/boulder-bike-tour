@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/riders', to: 'riders#index'
   get 'site/index'
 
   root 'site#index'

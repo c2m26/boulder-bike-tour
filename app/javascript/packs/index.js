@@ -6,13 +6,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'stylesheets/site.scss'
-import Home from '../components/Home/Home'
+import App from '../App'
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Home/>,
+    <App/>,
     document.body.appendChild(document.createElement('div')),
   )
 })
