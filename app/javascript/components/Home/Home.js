@@ -9,7 +9,7 @@ class Home extends Component {
         return (
             <div>
                 <ContestBanner/>
-                <Hero />
+                <Hero/>
                 <ButtonLinks />
                 <About />
             </div>

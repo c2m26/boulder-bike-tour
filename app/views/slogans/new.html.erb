@@ -1,0 +1,52 @@
+
+<div class="card shadow p-3 bg-white rounded mx-2">
+    <div class="card-body">
+
+        <%= form_with model: @slogan, local: true do |f| %>
+
+        <% if @slogan.errors.any? %>
+          <div id="error_explanation">
+            <h2>
+              <%= pluralize(@slogan.errors.count, "error") %> prohibited
+              this slogan from being saved:
+            </h2>
+            <ul>
+              <% @slogan.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+            <h2 class="card-title text-primary">Submit your slogan</h2>
+
+            <div class="form-group">
+                <%= f.label :firstName, 'First Name' %>
+                <%= f.text_field :firstName, autofocus: true, class: "form-control", placeholder: "John"%>
+            </div>
+
+            <div class="form-group">
+                <%= f.label :lastName, 'Last Name' %>
+                <%= f.text_field :lastName, autofocus: true, class: "form-control", placeholder: "Doe"%>
+            </div>
+
+            <div class="form-group">
+                <%= f.label :email %>
+                <%= f.text_field :email, autofocus: true, class: "form-control", placeholder: "johndoe@mail.com"%>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+                <%= f.label :slogan %>
+                <%= f.text_field :slogan, autofocus: true, class: "form-control", placeholder: "Give your best shot!"%>
+                <small id="emailHelp" class="form-text text-muted">Slogans must be 50 characters maximum</small>
+            </div>
+
+            <div class="actions">
+                <%= f.submit 'Submit', class: "btn btn-primary" %>
+            </div>
+
+        <%end%>
+    
+    </div>
+</div>
