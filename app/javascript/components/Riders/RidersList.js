@@ -5,10 +5,10 @@ function RidersList(props) {
    return (
      
         <tr>
-            <td>{props.firstName}</td>
-            <td>{props.lastName}</td>
-            <td>{props.city}</td>
-            <td>{props.state}</td>
+            <td>{props.entry.firstName}</td>
+            <td>{props.entry.lastName}</td>
+            <td>{props.entry.city}</td>
+            <td>{props.entry.state}</td>
         </tr>
 
    )

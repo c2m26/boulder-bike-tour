@@ -12,9 +12,12 @@ const Riders = () =>{
                 heading="Riders"
             />
             
-            <div className="container card">
-                <RidersTable />
+            <div className="row d-flex justify-content-center">
+                <div className="card col-xl-8 col-lg-8 col-md-10 col-sm-11 col-11">
+                    <RidersTable />
+                </div>
             </div>
+            
 
         </div>
         

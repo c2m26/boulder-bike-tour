@@ -6,13 +6,13 @@ function RidersTable() {
 
     const RiderRows = RidersData.map(rider => {
                         return(
-                            <RidersList firstName={RidersData.firstName} lastName={RidersData.lastName} city={RidersData.city} state={RidersData.state} />
+                            <RidersList entry={rider} />
                         )
                     })
 
     return (
         <div>
-           <table className="table table-striped">
+           <table className="table table-hover">
                <thead>
                    <th scope="Col">First name</th>
                    <th scope="Col">Last name</th>
