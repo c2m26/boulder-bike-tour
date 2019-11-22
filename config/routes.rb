@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   get '/riders', to: 'riders#index'
   get 'site/index'
 
-  get '/slogans/new',to: 'slogans#new'
-  post '/slogans', to: 'slogans#create'
+  namespace :api do
+    namespace :v1 do
+      resources :slogans, only: [:new, :create]
+    end
+  end
 
   root 'site#index'
 

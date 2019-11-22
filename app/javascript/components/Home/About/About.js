@@ -6,7 +6,7 @@ import img from "images/peloton.jpg"
 const About = () => {
     return (
         
-        <div>
+        <div id="about">
             <HeadingBanner
                 image={img}
                 heading="About"

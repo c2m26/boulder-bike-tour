@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_11_18_184832) do
     t.string "firstName"
     t.string "lastName"
     t.string "email"
-    t.string "slogan"
+    t.string "proposal"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

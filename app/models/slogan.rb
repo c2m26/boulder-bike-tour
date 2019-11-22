@@ -1,5 +1,5 @@
 class Slogan < ApplicationRecord
 
-    validates :firstName,  :lastName, :email, :slogan, presence: true
+    validates :firstName,  :lastName, :email, :proposal, presence: true
     
 end

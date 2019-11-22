@@ -4,7 +4,7 @@ class CreateSlogans < ActiveRecord::Migration[6.0]
       t.string :firstName
       t.string :lastName
       t.string :email
-      t.string :slogan
+      t.string :proposal
 
       t.timestamps
     end
