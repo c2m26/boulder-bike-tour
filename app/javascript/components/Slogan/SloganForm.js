@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 
-
-
 class SloganForm extends React.Component {
   constructor(props) {
     super(props);
@@ -44,7 +42,7 @@ class SloganForm extends React.Component {
 
     fetch(url, {
       method: 'POST',
-      body: JSON.stringify(data), // data can be `string` or {object}!
+      body: JSON.stringify(data),
       headers: {
         'Content-Type': 'application/json'
       }

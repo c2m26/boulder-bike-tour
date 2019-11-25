@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get '/riders', to: 'riders#index'
   get 'site/index'
+  get '/riders', to: 'riders#index'
+  get 'pictures', to: 'pictures#index'
 
   namespace :api do
     namespace :v1 do
