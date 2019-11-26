@@ -1,70 +1,65 @@
-import React from 'react'
+import React, {Component} from 'react'
+import Picture from './Picture'
 
 
 
 class PicIndex extends React.Component {
     
     constructor(props) {
-        super(props)
+        super(props)    
 
         this.state = {
-            picParams: {
-                farmId:'',
-                serverId:'',
-                id:'',
-                secret:'',
-            },
+            apiData: [],
             pp: 40,
             page: 1,
             totalPages: '',
-        }  
+        } 
+    }
 
-        /*this.componentWillMount() {
-            this.loadPics()
-        } */   
+    componentDidMount() {
+        this.loadPics()
+    }   
 
-        function loadPics () {
-            const {pp, page, picParams} = this.state
-            const key = 'bafdef3feb254155830234ac6b57985b'
-            const tags = {
-                tag1: 'bikerace',
-                tag2: 'BoulderBikeTour',
-                mode: 'OR'
-            }
-            const apiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key}&tags=%23${tags.tag1}%2C+%23${tags.tag2}&tag_mode=${tags.mode}&per_page=${pp}&format=json&nojsoncallback=${page}`
-        
-            return (apiUrl)
-        }   
-        
-        console.log(loadPics())
-       
-        /*this.componentDidMount () {
-            
-            const pics = response.json().photos;
-            this.setState(
-                {
-                farmId: pics.photo.farm,
-                serverId: pics.photos.photo.server,
-                id: pics.photo.id,
-                secret: pics.photo.secret,
-                loading: false
-                }
-            );
+    async loadPics () {
+        const {pp, page} = this.state
+        const key = 'bafdef3feb254155830234ac6b57985b'
+        const tags = {
+            tag1: 'bikerace',
+            tag2: 'BoulderBikeTour',
+            mode: 'OR'
         }
+        const apiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key}&tags=%23${tags.tag1}%2C+%23${tags.tag2}&tag_mode=${tags.mode}&per_page=${pp}&format=json&nojsoncallback=${page}`
+    
+        const response = await fetch(apiUrl)
+        const data = await response.json()
         
-        const url = "https://farm"+{farmId}+".staticflickr.com/"+{serverId}+"/"+{id}+{secret}+"_n.jpg";
-        */
+        this.setState({
+            apiData : data.photos.photo,
+//            page: data.photos.page,
+            totalPages: data.photos.total
+        })    
     }
     
-    
-    render (){
+    render() {
+
+        const Pics = this.state.apiData.map(
+            data => {
+                return( <Picture {...data}/>)
+            }
+        )
+
         return(
-            <div className="card-columns">
-                Teste
+            <div>
+                <h1>Teste</h1>
+                <div className="card-columns">
+                    {Pics}
+                </div>
             </div>
-        )    
-    }
-    
+            
+        )
+    }        
 }
 
 export default PicIndex
+
+

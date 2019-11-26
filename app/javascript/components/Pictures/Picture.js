@@ -1,9 +1,15 @@
-/*import React,{Component} from 'react'
+import React from 'react'
 
-const Picture = () => {
-       
+function Picture(props) {
+
+    const farmId = props.farm
+    const serverId = props.server
+    const id = props.id
+    const secret = props.secret
+
+
     return (
-    <img className= "card" src={url}/>
+        <img className= "card" src={`https://farm${farmId}.staticflickr.com/${serverId}/${id}_${secret}_n.jpg`}/>
     )
     
 }
