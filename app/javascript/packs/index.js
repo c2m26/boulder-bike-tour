@@ -5,7 +5,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import 'stylesheets/site.scss'
+import 'stylesheets/application.scss'
 import App from '../App'
 
 

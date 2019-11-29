@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import ButtonLinks from './ButtonLinks'
 import "./Hero.css"
+import '../../../../assets/stylesheets/styles.scss'
 import img from "images/hero.jpg"
 
 
@@ -14,12 +16,14 @@ class Hero extends Component {
 
         return (
             
-            <div style={styles} className="Hero d-flex flex-column flew-wrap justify-content-between align-items-center text-white">
-                <div className="d-flex flex-column align-items-center">
-                    <h1>The Boulder Bike Tour is comming!</h1>
-                    <h2>See you on 1 April 2020</h2>
+            <div style={styles} className="Hero">
+                <div className="bg-shade d-flex flex-column justify-content-center align-items-center text-white">    
+                    
+                        <h1>The Boulder Bike Tour is comming!</h1>
+                        <ButtonLinks />
+                        <h2>See you on 1 April 2020</h2>
+                    
                 </div>
-                <div>Countdown</div>
             </div>
 
         )

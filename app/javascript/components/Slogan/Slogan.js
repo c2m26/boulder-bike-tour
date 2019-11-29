@@ -1,5 +1,5 @@
 import React from 'react'
-import ConstestBanner from '../Home/ContestBanner'
+import ConstestBanner from '../General/ContestBanner'
 import SloganForm from '../Slogan/SloganForm'
 
 const Slogan = () => {

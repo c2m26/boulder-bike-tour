@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import ContestBanner from './ContestBanner'
+import ContestBanner from '../General/ContestBanner'
 import Hero from '../Home/Hero/Hero'
-import ButtonLinks from './Hero/ButtonLinks'
 import About from '../Home/About/About'
+import Countdown from './Countdown.js/Countdown'
 
 class Home extends Component {
     render () {
@@ -10,7 +10,7 @@ class Home extends Component {
             <div>
                 <ContestBanner/>
                 <Hero/>
-                <ButtonLinks />
+                <Countdown/>
                 <About />
             </div>
         )

@@ -6,10 +6,11 @@ function Picture(props) {
     const serverId = props.server
     const id = props.id
     const secret = props.secret
+    const size = 'z'
 
 
     return (
-        <img className= "card" src={`https://farm${farmId}.staticflickr.com/${serverId}/${id}_${secret}_n.jpg`}/>
+        <img className= "card" src={`https://farm${farmId}.staticflickr.com/${serverId}/${id}_${secret}_${size}.jpg`}/>
     )
     
 }
