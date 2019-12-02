@@ -1,0 +1,122 @@
+[
+ {
+   "firstName": "Dustin",
+   "LastName": "Green",
+   "Lat": 40,
+   "Long": -105.35
+ },
+ {
+   "firstName": "Jason",
+   "LastName": "Finn",
+   "Lat": 39.95,
+   "Long": -105.24
+ },
+ {
+   "firstName": "Howard",
+   "LastName": "Thompson",
+   "Lat": 40.06,
+   "Long": -105.26
+ },
+ {
+   "firstName": "Maggie",
+   "LastName": "Lantz",
+   "Lat": 40.03,
+   "Long": -105.23
+ },
+ {
+   "firstName": "Lawrence",
+   "LastName": "Duran",
+   "Lat": 40.04,
+   "Long": -105.23
+ },
+ {
+   "firstName": "Irene",
+   "LastName": "Molina",
+   "Lat": 39.96,
+   "Long": -105.22
+ },
+ {
+   "firstName": "Nancy",
+   "LastName": "Garner",
+   "Lat": 39.98,
+   "Long": -105.21
+ },
+ {
+   "firstName": "Tara",
+   "LastName": "Taylor",
+   "Lat": 40,
+   "Long": -105.25
+ },
+ {
+   "firstName": "Alejandro",
+   "LastName": "Smith",
+   "Lat": 40.02,
+   "Long": -105.26
+ },
+ {
+   "firstName": "Tricia",
+   "LastName": "Renshaw",
+   "Lat": 40.02,
+   "Long": -105.3
+ },
+ {
+   "firstName": "Travis",
+   "LastName": "Cook",
+   "Lat": 40.01,
+   "Long": -105.2
+ },
+ {
+   "firstName": "Joan",
+   "LastName": "Brooks",
+   "Lat": 39.98,
+   "Long": -105.24
+ },
+ {
+   "firstName": "Joseph",
+   "LastName": "Rodgers",
+   "Lat": 39.99,
+   "Long": -105.25
+ },
+ {
+   "firstName": "Matthew",
+   "LastName": "Gregson",
+   "Lat": 40.01,
+   "Long": -105.29
+ },
+ {
+   "firstName": "Katie",
+   "LastName": "Dunlap",
+   "Lat": 39.97,
+   "Long": -105.27
+ },
+ {
+   "firstName": "Leo",
+   "LastName": "Howard",
+   "Lat": 39.97,
+   "Long": -105.33
+ },
+ {
+   "firstName": "Maria",
+   "LastName": "Baisden",
+   "Lat": 40,
+   "Long": -105.29
+ },
+ {
+   "firstName": "Sandy",
+   "LastName": "Townsend",
+   "Lat": 40.05,
+   "Long": -105.3
+ },
+ {
+   "firstName": "Melinda",
+   "LastName": "Stephenson",
+   "Lat": 39.99,
+   "Long": -105.31
+ },
+ {
+   "firstName": "Jason",
+   "LastName": "Nichols",
+   "Lat": 40.01,
+   "Long": -105.32
+ }
+]
