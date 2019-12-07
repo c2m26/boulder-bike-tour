@@ -83,9 +83,6 @@ class PicIndex extends React.Component {
             }
         )
 
-        console.log(this.state.apiData)
-        console.log(this.state.page)
-
         return(
             <div>
                 <h1>Teste</h1>

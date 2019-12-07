@@ -14,7 +14,8 @@ function App() {
         return (
             <BrowserRouter>
                 <div>
-                    <Navbar />
+                    <Navbar/>
+                    
                 <switch>
                     <Route path="/" component={Home} exact />
                     <Route path="/api/v1/slogans/new" component={Slogan} exact />

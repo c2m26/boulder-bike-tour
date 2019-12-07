@@ -1,9 +1,37 @@
+#hero-wraper{
+    height: 100vh;
+    position: relative;
+    margin-top: -58px;
+    overflow: hidden;
+}
 
-.Hero{
-    min-height: 60vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#video{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -999;
     
 }
 
+.vid-overlay{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 999;
+    background: rgb(0,0,0, 0.25);
+
+}
+
+#mainHeading{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#secondHeading{
+    font-size: 4rem;
+    margin-top: 5rem;
+}

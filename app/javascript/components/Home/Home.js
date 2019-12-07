@@ -8,9 +8,7 @@ class Home extends Component {
     render () {
         return (
             <div>
-                <ContestBanner/>
                 <Hero/>
-                <Countdown/>
                 <About />
             </div>
         )

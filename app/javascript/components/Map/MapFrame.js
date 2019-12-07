@@ -36,30 +36,18 @@ class MapFrame extends React.Component{
         this.state.data.map(rider =>{
             return(
                 L.marker([rider.Lat, rider.Long]).addTo(this.map)
-                .bindPopup(rider.firstName + " " + rider.LastName)
-                .openPopup()
+                .bindPopup(rider.firstName + " " + rider.LastName)   
             )
-        })
-        
+        })       
     }
 
-    
-    
-    
-
-
-
-    
     render(){
         return(
             <div>
                 <div id="map" className="container"></div>
             </div>
         )
-    }
-    
-    
-
+    } 
 }
 
 export default MapFrame
