@@ -1,28 +1,69 @@
 import React, { Component } from 'react'
-import Navbar from '../../General/Navbar'
-import ButtonLinks from './ButtonLinks'
 import "./Hero.css"
 import '../../../../assets/stylesheets/styles.scss'
 import clip from '../../../../assets/videos/heroIntro.mp4'
+import image from '../../../../assets/images/hero.jpg'
 import Countdown from '../Countdown.js/Countdown'
 
 
 
 class Hero extends Component {
     
-    
-    
-    render () {
+    constructor(props){
+        super(props)
         
+        const staticView = false
+        
+        this.state={staticView}
+    }
 
-        if (screen.availWidth < 1450 || screen.availHeight < 700 ){
+    componentDidMount(){
+        window.addEventListener("resize", this.setView.bind(this)) /* check why bind(this) is required for the event listner to work*/         
+    }    
+
+    setView(){
+        const height = window.innerHeight
+        const width = window.innerWidth
+
+        if (width < 1450 || height < 700 ) {
+            this.setState({
+                staticView: true
+            })
+        } else {
+            this.setState({
+                staticView: false
+            })
+        }
+    }
+
+    componentWillUnmount(){
+        window.addEventListener("resize", this.setView())           
+       }
+    
+
+       render () {
+        
+        console.log(window.innerWidth)
+        console.log(window.innerHeight)
+        console.log(this.state.staticView)
+        
+        const styles = {
+            backgroundImage: "url(" + image + ")"
+        }
+
+        if (this.state.staticView == true){
 
             return(
-                <div className="hero-wraper">
-                    <h1>TESTE</h1>
+                <div style={styles} id="hero-wraper-static">
+    
+                    <div className="overlay d-flex flex-column justify-content-center align-items-center text-center text-white">    
+                        <h1 className="p-1" id="mainHeading">The Boulder Bike Tour is comming!</h1>
+                        <Countdown/>
+                        <h2 className="p-1" id="secondHeading">See you on 1 April 2020</h2>
+                    </div>
                 </div>
             )
-        } else{
+        } else {
             
             return (
                 <div id="hero-wraper">
@@ -31,10 +72,10 @@ class Hero extends Component {
                         <source src={clip}  type='video/mp4'/>   
                     </video>
                     
-                    <div className="vid-overlay d-flex flex-column justify-content-center align-items-center text-center text-white">    
-                        <h1 id="mainHeading">The Boulder Bike Tour is comming!</h1>
+                    <div className="overlay d-flex flex-column justify-content-center align-items-center text-center text-white">    
+                        <h1 className="p-1" id="mainHeading">The Boulder Bike Tour is comming!</h1>
                         <Countdown/>
-                        <h2 id="secondHeading">See you on 1 April 2020</h2>
+                        <h2 className="p-1" id="secondHeading">See you on 1 April 2020</h2>
                     </div>
                 </div>
             )

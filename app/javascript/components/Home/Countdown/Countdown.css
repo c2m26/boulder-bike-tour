@@ -1,18 +1,18 @@
 #cdrow{
-    width: 70vw;
+    width: 80vw;
 }
 
 #cardStyle{
-    background: rgb(256, 256, 256, 0.7);
-    color: black
+    background: rgb(255, 218, 8, 0.7);
+    color: black;
 }
 
 #time{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 
 
 #label{
-    font-size: 2rem;
+    font-size: 0.85rem;
 }

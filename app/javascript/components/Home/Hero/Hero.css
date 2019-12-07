@@ -5,6 +5,17 @@
     overflow: hidden;
 }
 
+#hero-wraper-static{
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    margin-top: -58px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 #video{
     min-height: 100vh;
     min-width: 100%;
@@ -15,23 +26,24 @@
     
 }
 
-.vid-overlay{
+.overlay{
     min-height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
     left:0;
     z-index: 999;
-    background: rgb(0,0,0, 0.25);
+    background: rgb(0,0,0, 0.4);
 
 }
 
 #mainHeading{
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
 }
 
 #secondHeading{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 5rem;
 }
