@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Picture from './Picture'
+import HeadingBanner from '../General/HeadingBanner';
 
 class PicIndex extends React.Component {
     
@@ -85,8 +86,8 @@ class PicIndex extends React.Component {
 
         return(
             <div>
-                <h1>Teste</h1>
-                <div className="card-columns">
+                <h2 className="text-center mb-2">Check the most awesome event pictures!</h2>
+                <div className="card-columns p-2">
                     {Pics}
                 </div>
                 

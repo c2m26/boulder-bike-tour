@@ -24,7 +24,7 @@ function App() {
                     <Route path="/riders" component={Riders} exact />
                 </switch> 
 
-                    <Footer />
+                
                 </div>
             </BrowserRouter>
             

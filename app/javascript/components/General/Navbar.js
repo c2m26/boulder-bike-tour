@@ -16,7 +16,7 @@ const Navbar = () => {
                         <NavLink className="nav-item nav-link" to="/pictures">Pictures</NavLink>
                         <NavLink className="nav-item nav-link" to="/tracker">Tracker</NavLink>
                         <NavLink className="nav-item nav-link" to="/riders">Riders</NavLink>
-                        <NavLink className="nav-item nav-link btn btn-danger text-white ml-2 p-2" to="/api/v1/slogans/new">Slogan contest</NavLink> 
+                        <NavLink className="nav-item nav-link btn btn-warning text-dark ml-2 p-2" to="/api/v1/slogans/new">Slogan contest</NavLink> 
                     </div>
                     
                 </div>

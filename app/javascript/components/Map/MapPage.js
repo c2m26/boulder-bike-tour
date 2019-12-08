@@ -1,11 +1,16 @@
 import React from 'react'
 import MapFrame from './MapFrame'
+import HeadingBanner from "../General/HeadingBanner"
+import peloton from "images/peloton.jpg"
 
 
 const MapPage = () =>{
     return(
         <div>
-            <h1>Test Map</h1>
+            <HeadingBanner
+                    image={peloton}
+                    heading="Checkout the riders' live position"
+                />
             <MapFrame/>
         </div>
 

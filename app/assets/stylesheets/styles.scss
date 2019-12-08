@@ -3,6 +3,10 @@
 }
 
 .bg-shade{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     min-height: inherit
+}
+
+#vh{
+    min-height: calc(100vh - 58px);
 }
