@@ -86,8 +86,8 @@ class Countdown extends React.Component {
                         <div className="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-2">
                             <div className="card" id="cardStyle">
                                 <div className="d-flex flex-column justify-content-center align-items-center">
-                                    <div className="p-1" id="time">{data.time}</div> 
-                                    <div className="p-1" id="label">{data.label}</div>
+                                    <div className="p-2" id="time">{data.time}</div> 
+                                    <div className="p-2" id="label">{data.label}</div>
                                 </div>
                             </div>
                         </div>

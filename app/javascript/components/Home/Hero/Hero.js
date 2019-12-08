@@ -3,7 +3,7 @@ import "./Hero.css"
 import '../../../../assets/stylesheets/styles.scss'
 import clip from '../../../../assets/videos/heroIntro.mp4'
 import image from '../../../../assets/images/hero.jpg'
-import Countdown from '../Countdown.js/Countdown'
+import Countdown from '../Countdown/Countdown'
 
 
 
@@ -25,7 +25,7 @@ class Hero extends Component {
         const height = window.innerHeight
         const width = window.innerWidth
 
-        if (width < 1450 || height < 700 ) {
+        if (width < 1650 || height < 750 ) {
             this.setState({
                 staticView: true
             })
