@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import "./SloganForm.css"
 
 class SloganForm extends React.Component {
   constructor(props) {
