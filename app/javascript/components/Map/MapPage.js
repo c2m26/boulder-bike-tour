@@ -9,7 +9,7 @@ const MapPage = () =>{
         <div>
             <HeadingBanner
                     image={peloton}
-                    heading="Checkout the riders' live position"
+                    heading="Checkout the riders' live tracking"
                 />
             <MapFrame/>
         </div>

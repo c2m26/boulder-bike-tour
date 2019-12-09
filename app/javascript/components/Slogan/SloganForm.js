@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import "./SloganForm.css"
 
 class SloganForm extends React.Component {
   constructor(props) {
@@ -60,22 +61,22 @@ class SloganForm extends React.Component {
       <form onSubmit={this.handleInputSubmit}>
         <div className="form-group">
           <label>First Name</label>
-          <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleInputChange} className="form-control" placeholder="John"/>
+          <input required type="text" name="firstName" value={this.state.firstName} onChange={this.handleInputChange} className="form-control" placeholder="John"/>
         </div>
         
         <div className="form-group">
           <label>Last Name</label>
-          <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleInputChange} className="form-control" placeholder="Doe"/>
+          <input required type="text" name="lastName" value={this.state.lastName} onChange={this.handleInputChange} className="form-control" placeholder="Doe"/>
         </div>
 
         <div className="form-group">
           <label>Email address</label>
-          <input type="email" name="email" value={this.state.email} onChange={this.handleInputChange} className="form-control" placeholder="Johdoe@mail.com"/>
+          <input required type="email" name="email" value={this.state.email} onChange={this.handleInputChange} className="form-control" placeholder="Johdoe@mail.com"/>
           <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div className="form-group">
           <label>Slogan</label>
-          <input type="text" name="proposal" value={this.state.proposal} onChange={this.handleInputChange} className="form-control" placeholder="Give it a try!"/>
+          <input required type="text" maxLength="50" name="proposal" value={this.state.proposal} onChange={this.handleInputChange} className="form-control" placeholder="Give it a try!"/>
           <small id="sloganHelp" className="form-text text-muted">Slogan must have maximum 50 characters</small>
         </div>
         

@@ -15,6 +15,7 @@ class Hero extends Component {
         const staticView = false
         
         this.state={staticView}
+  
     }
 
     componentDidMount(){
