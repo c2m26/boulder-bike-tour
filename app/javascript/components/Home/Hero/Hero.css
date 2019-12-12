@@ -1,15 +1,13 @@
 #hero-wraper{
-    height: 100vh;
+    height: calc(100vh - 58px);
     position: relative;
-    margin-top: -58px;
     overflow: hidden;
 }
 
 #hero-wraper-static{
-    height: 100vh;
+    height: calc(100vh - 58px);
     max-width: 100%;
     position: relative;
-    margin-top: -58px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

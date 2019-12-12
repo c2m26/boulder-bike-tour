@@ -86,8 +86,7 @@ class PicIndex extends React.Component {
 
         return(
             <div>
-                <h2 className="text-center mb-2">Check the most awesome event pictures!</h2>
-                <div className="card-columns p-2">
+                <div className="card-columns mt-3 p-2">
                     {Pics}
                 </div>
                 

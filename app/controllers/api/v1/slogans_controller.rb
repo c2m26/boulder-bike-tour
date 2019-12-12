@@ -1,10 +1,7 @@
 class Api::V1::SlogansController < ApplicationController
     skip_before_action :verify_authenticity_token
     
-    def new
-        slogan = Slogan.new
-    end
-
+    
     def create
         slogan = Slogan.new(slogan_params)
         if slogan.save

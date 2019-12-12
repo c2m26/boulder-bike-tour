@@ -9,7 +9,6 @@ class Home extends Component {
             <div>
                 <Hero/>
                 <About />
-                <Footer />
             </div>
         )
     }

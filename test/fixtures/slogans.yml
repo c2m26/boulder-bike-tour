@@ -4,10 +4,10 @@ one:
   firstName: MyString
   lastName: MyString
   email: MyString
-  slogan: MyString
+  proposal: MyString
 
 two:
   firstName: MyString
   lastName: MyString
   email: MyString
-  slogan: MyString
+  proposal: MyString

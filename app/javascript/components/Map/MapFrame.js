@@ -3,22 +3,30 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './Map.css'
 import data from '../Data/riderPlaceData.json'
+import markerShadow from "leaflet/dist/images/marker-shadow.png"
 
-// code block above fixes issues of icon display when using leaflet with webpack (got it from https://github.com/Leaflet/Leaflet/issues/4968)
-delete L.Icon.Default.prototype._getIconUrl;
 
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
-});
 
 class MapFrame extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            data
+            data,
+            image: markerShadow
         }
+
+        // code block above fixes issues of icon display when using leaflet with webpack (got it from https://github.com/Leaflet/Leaflet/issues/4968)
+        delete L.Icon.Default.prototype._getIconUrl;
+
+
+        L.Icon.Default.mergeOptions({
+        iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+        iconUrl: require('leaflet/dist/images/marker-icon.png'),
+        shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+        });
+
+        console.log(require('leaflet/dist/images/marker-shadow.png'))
+
     }
 
     componentDidMount(){
@@ -31,8 +39,7 @@ class MapFrame extends React.Component{
         accessToken: 'pk.eyJ1IjoiYzJtMjYiLCJhIjoiY2szb2E4MWswMDZiNjNtbzR4b2ZjMG11NCJ9.E1ENThSFZhCs05OtNWCyNA'
         }).addTo(this.map);
 
-        console.log(this.state)
-    
+           
         this.state.data.map(rider =>{
             return(
                 L.marker([rider.Lat, rider.Long]).addTo(this.map)
@@ -45,6 +52,8 @@ class MapFrame extends React.Component{
         return(
             <div>
                 <div id="map" className="container"></div>
+                <img src={this.state.image} />
+                
             </div>
         )
     } 

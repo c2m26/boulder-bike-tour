@@ -5,6 +5,7 @@ import race from "images/race.jpg"
 import winner from "images/winner.jpg"
 import './About.css'
 
+
 const About = () => {
 
     const img = [

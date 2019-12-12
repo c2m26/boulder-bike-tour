@@ -13,8 +13,7 @@ const Slogan = () => {
                     <SloganForm/>
                 </div>
             </div>   
-            <Footer/>
-
+          
         </div>
         
 

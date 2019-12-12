@@ -12,9 +12,18 @@ class Hero extends Component {
     constructor(props){
         super(props)
         
-        const staticView = false
-        
-        this.state={staticView}
+        const height = window.innerHeight
+        const width = window.innerWidth
+
+        if (width < 1650 || height < 750 ) {
+            this.state={
+                staticView: true
+            }
+        } else {
+            this.state={
+                staticView: false
+            }
+        }
   
     }
 
@@ -23,9 +32,10 @@ class Hero extends Component {
     }    
 
     setView(){
+
         const height = window.innerHeight
         const width = window.innerWidth
-
+    
         if (width < 1650 || height < 750 ) {
             this.setState({
                 staticView: true
