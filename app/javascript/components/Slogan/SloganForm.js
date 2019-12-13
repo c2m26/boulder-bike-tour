@@ -27,7 +27,6 @@ class SloganForm extends React.Component {
   }
 
   handleInputSubmit(event) {
-    alert('The submitted Slogan was: ' + this.state.proposal);
     event.preventDefault();
 
     const firstName = this.state.firstName
@@ -49,11 +48,17 @@ class SloganForm extends React.Component {
     } 
     ).then(response =>{
       console.log(response)
+      if(response.status == 200){
+        alert('Hello ' + this.state.firstName + ', your slogan ' + '"' + this.state.proposal + '"' + ' was submitted')
+      } else {
+        alert('Hello ' + this.state.firstName + ', your slogan ' + '"' + this.state.proposal + '"' + ' could not be submitted')
+      }
     })
     .catch(error => {
       console.log(error)
     })
   }
+ 
      
   render () {
     return(

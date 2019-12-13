@@ -40,7 +40,7 @@ gem 'jquery-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # For testing Rails API with Rspec
+  # For testing Rails API with RSpec
   gem 'rspec-rails', '~> 3.6'
   gem 'faker'
   gem 'factory_bot_rails'
@@ -62,6 +62,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  # For testing Rails API with RSpec
+  
   
 end
 

@@ -6,7 +6,7 @@ function RidersTable() {
 
     const RiderRows = RidersData.map(rider => {
                         return(
-                            <RidersList entry={rider} />
+                            <RidersList key={rider.firstName + rider.lastName} {...rider} />
                         )
                     })
 
