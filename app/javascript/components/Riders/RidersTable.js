@@ -13,16 +13,17 @@ function RidersTable() {
     return (
         <div>
            <table className="table table-hover">
-               <thead>
-                   <th scope="Col">First name</th>
-                   <th scope="Col">Last name</th>
-                   <th scope="Col">City of origin</th>
-                   <th scope="Col">State of origin</th>
-               </thead>
-               <tbody>
+                <thead>
+                    <tr>
+                    <th scope="Col">First name</th>
+                    <th scope="Col">Last name</th>
+                    <th scope="Col">City of origin</th>
+                    <th scope="Col">State of origin</th>
+                    </tr>
+                </thead>
+                <tbody>
                     {RiderRows}
-               </tbody>
-               
+                </tbody>
            </table>
        </div>
     )

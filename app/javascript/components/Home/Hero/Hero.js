@@ -24,11 +24,13 @@ class Hero extends Component {
                 staticView: false
             }
         }
+
+        this.setView = this.setView.bind(this)
   
     }
 
     componentDidMount(){
-        window.addEventListener("resize", this.setView.bind(this)) /* check why bind(this) is required for the event listner to work*/         
+        window.addEventListener("resize", this.setView) /* check why bind(this) is required for the event listner to work*/         
     }    
 
     setView(){
@@ -48,7 +50,7 @@ class Hero extends Component {
     }
 
     componentWillUnmount(){
-        window.addEventListener("resize", this.setView())           
+        window.removeEventListener("resize", this.setView)           
        }
     
 

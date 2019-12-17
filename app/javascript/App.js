@@ -15,9 +15,7 @@ function App() {
     
         return (
             <BrowserRouter>
-                <div>
-                    <Navbar/>
-                    
+                <Navbar/>
                 <switch>
                     <Route path="/" component={Home} exact />
                     <Route path="/api/v1/slogans/new" component={Slogan} exact />
@@ -25,11 +23,7 @@ function App() {
                     <Route path="/pictures" component={PicIndex} exact />
                     <Route path="/riders" component={Riders} exact />
                 </switch> 
-
-                
-                </div>
             </BrowserRouter>
-            
         )
     
 } 

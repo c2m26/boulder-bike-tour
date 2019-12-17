@@ -1,6 +1,5 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Picture from './Picture'
-import HeadingBanner from '../General/HeadingBanner';
 
 class PicIndex extends React.Component {
     
@@ -16,16 +15,19 @@ class PicIndex extends React.Component {
         } 
 
         this.loadMore = this.loadMore.bind(this);
+        this.handleScroll = this.handleScroll.bind(this)
     }
 
     componentDidMount() {
         this.loadPics()
-        this.scrollListener = window.addEventListener('scroll', (e) => {
-            this.handleScroll(e)
-        })
+        window.addEventListener('scroll', this.handleScroll)
     }
 
-    handleScroll = () => {
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll)
+    }
+
+    handleScroll() {
         const {scrolling, page, totalPages} = this.state
         if (scrolling) return
         if (totalPages <= page) return
@@ -80,7 +82,7 @@ class PicIndex extends React.Component {
 
         const Pics = this.state.apiData.map(
             data => {
-                return( <Picture {...data}/>)
+                return( <Picture key={data.id} {...data}/>)
             }
         )
 
