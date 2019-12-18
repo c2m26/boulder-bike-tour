@@ -1,5 +1,5 @@
 import React from 'react'
-import  {BrowserRouter, Route} from 'react-router-dom'
+import  {BrowserRouter, Route, Switch} from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Navbar from './components/General/Navbar'
@@ -16,13 +16,13 @@ function App() {
         return (
             <BrowserRouter>
                 <Navbar/>
-                <switch>
+                <Switch>
                     <Route path="/" component={Home} exact />
                     <Route path="/api/v1/slogans/new" component={Slogan} exact />
                     <Route path="/tracker" component={MapPage} exact />
                     <Route path="/pictures" component={PicIndex} exact />
                     <Route path="/riders" component={Riders} exact />
-                </switch> 
+                </Switch> 
             </BrowserRouter>
         )
     
