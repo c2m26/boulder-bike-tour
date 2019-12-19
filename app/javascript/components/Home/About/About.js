@@ -27,15 +27,15 @@ const About = () => {
             </div>
             
             <div id="row-height" className="row d-flex justify-content-center my-2">
-                <div id="img-frame" className="my-1 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12" style={img[1]} ></div>
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center">
+                <div id="img-frame" className="my-1 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 order-xl-0 order-lg-0 order-md-0 order-sm-1 order-1" style={img[1]} ></div>
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center order-xl-1 order-lg-1 order-md-1 order-sm-0 order-0">
                     <h2>The Race</h2>
                     <p>The Boulder Bike Tour is a frustrating but rewarding experience. It is one of the few races entirely open to the United States that actually pushes the limits of even the most endurance focused cyclist. Held in Boulder county, it's a long, arduous two hundred miles long ride on steep hills that requires balance, attention, and willpower.</p>
                 </div>
             </div>
             
             <div id="row-height" className="row d-flex justify-content-center my-2">
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center">
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center order-sm-0 order-0">
                     <h2>The Prizes</h2>
                     <p>A total of around 1.2 million USD will be awarded to the teams and riders, including 400 000 USD to the winner of the final individual general classification.</p>
                     <p>The winner of the constest for the event slogan will be awarded a 1000 USD prize</p>
