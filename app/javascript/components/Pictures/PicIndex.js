@@ -1,5 +1,6 @@
 import React from 'react'
 import Picture from './Picture'
+import Config from '../Config'
 
 class PicIndex extends React.Component {
     
@@ -40,22 +41,17 @@ class PicIndex extends React.Component {
     
     async loadPics () {
         const {pp, page} = this.state
-        console.log(this.state.page)
-        const key = 'bafdef3feb254155830234ac6b57985b'
+        const config = {Config}
         const tags = {
             tag1: 'bikerace',
             tag2: 'BoulderBikeTour',
             mode: 'OR'
         }
-        const apiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key}&tags=%23${tags.tag1}%2C+%23${tags.tag2}&tag_mode=${tags.mode}&per_page=${pp}&page=${page}&format=json&nojsoncallback=1`
+        const apiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${config.Config.flickr_api_key}&tags=%23${tags.tag1}%2C+%23${tags.tag2}&tag_mode=${tags.mode}&per_page=${pp}&page=${page}&format=json&nojsoncallback=1`
     
-        console.log(apiUrl + "before await")
-
         const response = await fetch(apiUrl)
         const data = await response.json()
         
-        console.log(apiUrl)
-
         this.setState(state => ({
             apiData : [...state.apiData, ...data.photos.photo],
             totalPages: data.photos.total,
